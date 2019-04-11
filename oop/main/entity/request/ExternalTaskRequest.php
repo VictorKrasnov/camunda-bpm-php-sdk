@@ -237,5 +237,5 @@ class ExternalTaskRequest extends Request {
         $this->errorCode = $errorCode;
         return $this;
     }
-    
+
 }

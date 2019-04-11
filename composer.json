@@ -1,5 +1,5 @@
 {
-  "name": "kushalhalder/camunda-bpm-php-sdk",
+  "name": "victorkrasnov/camunda-bpm-php-sdk",
   "description": "PHP SDK for camundaBPM process services",
   "license": "Apache-2.0",
   "minimum-stability": "stable",
@@ -7,8 +7,8 @@
   "homepage": "http://camunda.org",
   "authors": [
     {
-      "name": "Kushal Halder",
-      "email": "krazykushal@gmail.com"
+      "name": "Victor Krasnov",
+      "email": "krasnovvy@gmail.com"
     }
   ],
 
