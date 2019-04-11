@@ -58,20 +58,184 @@ class ExternalTaskRequest extends Request {
      */
     protected $errorCode;
 
-
-    public function __get($property) {
-        if (property_exists($this, $property)) {
-            return $this->$property;
-        }
-
-        throw new \Exception("$property is not a property of " . __CLASS__);
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public function __set($property, $value) {
-        if (property_exists($this, $property)) {
-            $this->$property = $value;
-        }
-
+    /**
+     * @param mixed $id
+     * @return ExternalTaskRequest
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getWorkerId()
+    {
+        return $this->workerId;
+    }
+
+    /**
+     * @param mixed $workerId
+     * @return ExternalTaskRequest
+     */
+    public function setWorkerId($workerId)
+    {
+        $this->workerId = $workerId;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMaxTasks()
+    {
+        return $this->maxTasks;
+    }
+
+    /**
+     * @param mixed $maxTasks
+     * @return ExternalTaskRequest
+     */
+    public function setMaxTasks($maxTasks)
+    {
+        $this->maxTasks = $maxTasks;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUsePriority()
+    {
+        return $this->usePriority;
+    }
+
+    /**
+     * @param mixed $usePriority
+     * @return ExternalTaskRequest
+     */
+    public function setUsePriority($usePriority)
+    {
+        $this->usePriority = $usePriority;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTopics()
+    {
+        return $this->topics;
+    }
+
+    /**
+     * @param mixed $topics
+     * @return ExternalTaskRequest
+     */
+    public function setTopics($topics)
+    {
+        $this->topics = $topics;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getErrorMessage()
+    {
+        return $this->errorMessage;
+    }
+
+    /**
+     * @param mixed $errorMessage
+     * @return ExternalTaskRequest
+     */
+    public function setErrorMessage($errorMessage)
+    {
+        $this->errorMessage = $errorMessage;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getErrorDetails()
+    {
+        return $this->errorDetails;
+    }
+
+    /**
+     * @param mixed $errorDetails
+     * @return ExternalTaskRequest
+     */
+    public function setErrorDetails($errorDetails)
+    {
+        $this->errorDetails = $errorDetails;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRetries()
+    {
+        return $this->retries;
+    }
+
+    /**
+     * @param mixed $retries
+     * @return ExternalTaskRequest
+     */
+    public function setRetries($retries)
+    {
+        $this->retries = $retries;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRetryTimeout()
+    {
+        return $this->retryTimeout;
+    }
+
+    /**
+     * @param mixed $retryTimeout
+     * @return ExternalTaskRequest
+     */
+    public function setRetryTimeout($retryTimeout)
+    {
+        $this->retryTimeout = $retryTimeout;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getErrorCode()
+    {
+        return $this->errorCode;
+    }
+
+    /**
+     * @param mixed $errorCode
+     * @return ExternalTaskRequest
+     */
+    public function setErrorCode($errorCode)
+    {
+        $this->errorCode = $errorCode;
+        return $this;
+    }
+    
 }
