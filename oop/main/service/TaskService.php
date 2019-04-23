@@ -158,6 +158,26 @@ class TaskService extends RequestService {
 
   /**
    * Completes a Task and updates process variables
+   * @link https://docs.camunda.org/manual/7.3/api-references/rest/#task-submit-task-form
+   *
+   * @param String $id task ID
+   * @param TaskRequest $request variable properties
+   * @throws \Exception
+   */
+  public function submitFormTask($id, TaskRequest $request) {
+    $this->setRequestUrl('/task/'.$id.'/submit-form');
+    $this->setRequestObject($request);
+    $this->setRequestMethod('POST');
+
+    try {
+      $this->execute();
+    } catch (Exception $e) {
+      throw $e;
+    }
+  }
+  
+  /**
+   * Completes a Task and updates process variables
    * @link http://docs.camunda.org/api-references/rest/#!/task/post-complete
    *
    * @param String $id task ID
